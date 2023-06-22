@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Gowun+Batang:wght@400;700&family=Nanum+Pen+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!-- text css -->
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>새로운 시작이 될 여행, <br />함께 떠나요!</h1>
+      <div class="guide_chat">
+        <label for="place">어디로 여행하세요?</label>
+        <input type="text" id="place" />
+        <label for="date">며칠간 여행하세요?</label>
+        <input type="text" id="date" />
+        <button id="btnSendMessage">일정 알아보기</button>
+      </div>
+      <div class="loder">
+        <i class="fa-solid fa-spinner fa-spin"></i>
+      </div>
+      <div class="chat_con">
+        <!-- <div class="chat_message">
+          <p class="assistant">대화내용</p>
+        </div>
+        <div class="chat_message">
+          <p class="question">사용자 질문내용</p>
+        </div> -->
+      </div>
+      <div class="chat-input">
+        <div class="plusBox">
+          <input
+            type="text"
+            placeholder="여행지에 관련된 다른 질문이 있으신가요?"
+          />
+          <button id="btn">질문하기</button>
+        </div>
+        <button class="restart">새로운 일정짜기</button>
+      </div>
+
+      <div class="kakaoAd">
+        <ins
+          class="kakao_ad_area"
+          style="display: none"
+          data-ad-unit="DAN-96Nyl3LcmEbanC36"
+          data-ad-width="320"
+          data-ad-height="100"
+        ></ins>
+        <script
+          type="text/javascript"
+          src="//t1.daumcdn.net/kas/static/ba.min.js"
+          async
+        ></script>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
